@@ -1,0 +1,44 @@
+﻿@model LITDucks.Models.IndexViewModel
+<div class="jumbotron" style="background: white;">
+    <div class="row">
+        <div class="col-md-2">
+            <img src="~/Content/Images/duck.png" style="width: 150px; margin-top: 60px;" />
+        </div>
+        <div class="col-md-8">
+            <h1>LIT M04 Final Day Project!</h1>
+            <h3>
+                Welcome to the LIT M04 final day project. For your listening pleasure, feel free to enjoy the
+                relaxing and soothing sounds of our LIT Ducks.
+            </h3>
+        </div>
+        <div class="col-md-2">
+            <img src="~/Content/Images/duck2.png" style="width: 170px; margin-top: 60px;" />
+        </div>
+    </div>
+    <div class="row" style="margin-top: 100px;">
+        <div class="col-md-3 col-md-offset-3">
+            <img src="~/Content/Images/duck3.jpg" id="rubber-duck" style="width: 200px; cursor: pointer;" />
+            <br />
+            <h3 style="text-align: center;" id="rubber-duck-count">@(Model.QuackCounts == null ? 0 : Model.QuackCounts.RubberDuckCount)</h3>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+            <img src="~/Content/Images/duck4.png" id="real-duck" style="width: 200px; cursor: pointer;" />
+            <h3 style="text-align: center;" id="real-duck-count">@(Model.QuackCounts == null ? 0 : Model.QuackCounts.RealDuckCount)</h3>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 10px;">
+        <div class="col-md-1 col-md-offset-5">
+            <button class="btn btn-danger" id="donate">Donate</button>
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.signalR-1.2.2.min.js"></script>
+    <script src="/signalr/hubs"></script>
+<script src="~/Scripts/jquery.jrumble.1.3.min.js"></script>
+    <script src="~/Scripts/index.js"></script>
+}

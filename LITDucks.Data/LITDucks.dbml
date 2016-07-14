@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LITDucks" Class="LITDucksDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=LITDucks;Integrated Security=True" SettingsObjectName="LITDucks.Data.Properties.Settings" SettingsPropertyName="LITDucksConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.QuackCounts" Member="QuackCounts">
+    <Type Name="QuackCount">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RealDuckCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RubberDuckCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

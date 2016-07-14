@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LITDucks">
+  <DataContextMoniker Name="/LITDucksDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ad5dfafd-15c2-4630-9eb7-3f7db345ca6b" absoluteBounds="4, 1.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/LITDucksDataContext/QuackCount" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1e0d0ea-00cb-4a03-bcf7-3120a6094bac" absoluteBounds="4.015, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
